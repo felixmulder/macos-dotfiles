@@ -13,7 +13,7 @@
   system.defaults.trackpad.TrackpadRightClick = true;
 
   system.defaults.NSGlobalDomain.AppleKeyboardUIMode = 3;
-  system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = true;
+  system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
   system.defaults.NSGlobalDomain.InitialKeyRepeat = 10;
   system.defaults.NSGlobalDomain.KeyRepeat = 1;
   system.defaults.NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
@@ -34,6 +34,7 @@
       pkgs.bat
       pkgs.neovim
       pkgs.jq
+      pkgs.iterm2
     ];
 
   services.yabai = {
