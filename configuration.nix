@@ -32,9 +32,10 @@
   environment.systemPackages =
     [
       pkgs.bat
-      pkgs.neovim
-      pkgs.jq
+      pkgs.hunspell
       pkgs.iterm2
+      pkgs.jq
+      pkgs.neovim
     ];
 
   services.yabai = {
