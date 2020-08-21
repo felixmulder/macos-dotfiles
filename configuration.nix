@@ -165,8 +165,15 @@
           extraPlugins.space-vim-dark
 
           # Syntax plugins
-          coc-nvim
+          coc-css
+          coc-highlight
           coc-html
+          coc-java
+          coc-json
+          coc-nvim
+          coc-solargraph
+          coc-yaml
+
           vim-pug
           rust-vim
           vim-scala
@@ -191,11 +198,11 @@
               "nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
           " }
 
-          " Deoplete {
-              "let g:deoplete#enable_at_startup = 1
-              " Set tab in deoplete to go down through suggestions
-              "inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-              "inoremap <expr><return> pumvisible() ? "\<c-y>" : "\<return>"
+          " coc.nvim {
+              " Use tab to cycle suggestions
+              inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+              inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+              inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
           " }
 
           " Special symbols {
@@ -212,6 +219,7 @@
               colorscheme space-vim-dark
               hi Comment    cterm=italic
               hi Comment    guifg=11 ctermfg=59
+              "hi Comment guifg=#5C6370 ctermfg=59
               hi Normal     ctermbg=NONE guibg=NONE
               hi LineNr     ctermbg=NONE guibg=NONE
               hi SignColumn ctermbg=NONE guibg=NONE
