@@ -107,8 +107,8 @@
 
       # navigate windows on space
       alt - h : yabai -m window --focus west
-      alt - j : yabai -m window --focus south
-      alt - k : yabai -m window --focus north
+      alt - j : yabai -m window --focus next
+      alt - k : yabai -m window --focus prev
       alt - l : yabai -m window --focus east
 
 
