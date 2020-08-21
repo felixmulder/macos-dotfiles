@@ -37,6 +37,7 @@
       pkgs.hunspell
       pkgs.iterm2
       pkgs.jq
+      pkgs.nodejs
     ];
 
   services.yabai = {
