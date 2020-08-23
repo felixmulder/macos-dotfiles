@@ -96,18 +96,20 @@
       shift + alt - return : open -a iTerm --new
 
       # Space focus
-      alt - left : yabai -m space --focus prev
-      alt - right : yabai -m space --focus next
+      ctrl - left : yabai -m space --focus prev
+      ctrl - right : yabai -m space --focus next
       alt - 1 : yabai -m space --focus 1
       alt - 2 : yabai -m space --focus 2
       alt - 3 : yabai -m space --focus 3
       alt - 4 : yabai -m space --focus 4
 
       # navigate windows on space
-      alt - h : yabai -m window --focus west
       alt - j : yabai -m window --focus next
       alt - k : yabai -m window --focus prev
-      alt - l : yabai -m window --focus east
+
+      # window resizing, resizes the current window larger or smaller on the x-axis
+      alt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0
+      alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0
 
       # Move window to different space
       shift + alt - 1 : yabai -m window --space 1
