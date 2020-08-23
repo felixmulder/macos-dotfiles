@@ -34,6 +34,7 @@
       config.programs.vim.package
 
       pkgs.bat
+      pkgs.gist
       pkgs.hunspell
       pkgs.iterm2
       pkgs.jq
