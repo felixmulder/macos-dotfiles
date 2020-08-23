@@ -95,16 +95,13 @@
       # Open terminal
       shift + alt - return : open -a iTerm --new
 
-      # fast focus desktop
-      shift + alt - x : yabai -m space --focus recent
-      shift + alt - l : yabai -m space --focus next
-      shift + alt - j : yabai -m space --focus next
-      shift + alt - k : yabai -m space --focus prev
-      shift + alt - h : yabai -m space --focus prev
-      shift + alt - 1 : yabai -m space --focus 1
-      shift + alt - 2 : yabai -m space --focus 2
-      shift + alt - 3 : yabai -m space --focus 3
-      shift + alt - 4 : yabai -m space --focus 4
+      # Space focus
+      alt - left : yabai -m space --focus prev
+      alt - right : yabai -m space --focus next
+      alt - 1 : yabai -m space --focus 1
+      alt - 2 : yabai -m space --focus 2
+      alt - 3 : yabai -m space --focus 3
+      alt - 4 : yabai -m space --focus 4
 
       # navigate windows on space
       alt - h : yabai -m window --focus west
@@ -112,6 +109,11 @@
       alt - k : yabai -m window --focus prev
       alt - l : yabai -m window --focus east
 
+      # Move window to different space
+      shift + alt - 1 : yabai -m window --space 1
+      shift + alt - 2 : yabai -m window --space 2
+      shift + alt - 3 : yabai -m window --space 3
+      shift + alt - 4 : yabai -m window --space 4
 
       # Move window to different space and follow
       shift + cmd + alt - 1 : yabai -m window --space 1 && \
