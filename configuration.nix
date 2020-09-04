@@ -98,34 +98,34 @@
       # Space focus
       ctrl - left : yabai -m space --focus prev
       ctrl - right : yabai -m space --focus next
-      alt - 1 : yabai -m space --focus 1
-      alt - 2 : yabai -m space --focus 2
-      alt - 3 : yabai -m space --focus 3
-      alt - 4 : yabai -m space --focus 4
+      lalt - 1 : yabai -m space --focus 1
+      lalt - 2 : yabai -m space --focus 2
+      lalt - 3 : yabai -m space --focus 3
+      lalt - 4 : yabai -m space --focus 4
 
       # navigate windows on space
-      alt - j : yabai -m window --focus next
-      alt - k : yabai -m window --focus prev
+      lalt - j : yabai -m window --focus next
+      lalt - k : yabai -m window --focus prev
 
       # window resizing, resizes the current window larger or smaller on the x-axis
-      alt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0
-      alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0
+      lalt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0
+      lalt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0
 
       # Move window to different space
-      shift + alt - 1 : yabai -m window --space 1
-      shift + alt - 2 : yabai -m window --space 2
-      shift + alt - 3 : yabai -m window --space 3
-      shift + alt - 4 : yabai -m window --space 4
+      shift + lalt - 1 : yabai -m window --space 1
+      shift + lalt - 2 : yabai -m window --space 2
+      shift + lalt - 3 : yabai -m window --space 3
+      shift + lalt - 4 : yabai -m window --space 4
 
       # Move window to different space and follow
-      shift + cmd + alt - 1 : yabai -m window --space 1 && \
-                              yabai -m space --focus 1
-      shift + cmd + alt - 2 : yabai -m window --space 2 && \
-                              yabai -m space --focus 2
-      shift + cmd + alt - 3 : yabai -m window --space 3 && \
-                              yabai -m space --focus 3
-      shift + cmd + alt - 4 : yabai -m window --space 4 && \
-                              yabai -m space --focus 4
+      shift + cmd + lalt - 1 : yabai -m window --space 1 && \
+                               yabai -m space --focus 1
+      shift + cmd + lalt - 2 : yabai -m window --space 2 && \
+                               yabai -m space --focus 2
+      shift + cmd + lalt - 3 : yabai -m window --space 3 && \
+                               yabai -m space --focus 3
+      shift + cmd + lalt - 4 : yabai -m window --space 4 && \
+                               yabai -m space --focus 4
     '';
   };
 
