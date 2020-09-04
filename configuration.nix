@@ -107,6 +107,10 @@
       lalt - j : yabai -m window --focus next
       lalt - k : yabai -m window --focus prev
 
+      # move windows on space
+      shift + lalt - j : yabai -m window --swap next
+      shift + lalt - k : yabai -m window --swap prev
+
       # window resizing, resizes the current window larger or smaller on the x-axis
       lalt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0
       lalt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0
