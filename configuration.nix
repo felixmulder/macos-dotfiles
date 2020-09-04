@@ -121,15 +121,9 @@
       shift + lalt - 3 : yabai -m window --space 3
       shift + lalt - 4 : yabai -m window --space 4
 
-      # Move window to different space and follow
-      shift + cmd + lalt - 1 : yabai -m window --space 1 && \
-                               yabai -m space --focus 1
-      shift + cmd + lalt - 2 : yabai -m window --space 2 && \
-                               yabai -m space --focus 2
-      shift + cmd + lalt - 3 : yabai -m window --space 3 && \
-                               yabai -m space --focus 3
-      shift + cmd + lalt - 4 : yabai -m window --space 4 && \
-                               yabai -m space --focus 4
+      # Toggle float and center
+      lalt - t : yabai -m window --toggle float; \
+                 yabai -m window --grid 4:4:1:1:2:2
     '';
   };
 
